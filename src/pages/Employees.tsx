@@ -178,7 +178,8 @@ const Employees: React.FC = () => {
           <div className="w-full max-w-md overflow-hidden rounded-3xl border border-white/15 bg-slate-900 shadow-2xl">
             <div className="bg-linear-to-r from-blue-700 to-red-600 p-6 text-white">
               <h2 className="text-2xl font-black">Adicionar Usuário</h2>
-              <p className="text-blue-100 text-sm mt-1">Cria usuário para o sistema. Caso der algum erro, me mande mensagem</p>
+              <p className="text-blue-100 text-sm mt-1">Ao adionar usuário, você sairá da sua conta. Entra novamente.
+                Caso der algum erro, me mande mensagem</p>
             </div>
 
             <form onSubmit={handleAddEmployee} className="p-6 space-y-5">
