@@ -4,7 +4,7 @@ import type { Appointment } from '../types';
 interface AppointmentModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (appointment: Appointment) => void;
+  onSave: (appointment: Appointment) => Promise<void>;
   appointment?: Appointment;
   userName: string;
 }
@@ -29,7 +29,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({
     }
   );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const appointmentData: Appointment = {
       ...formData,
@@ -38,7 +38,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({
       createdBy: userName,
       createdAt: new Date().toISOString(),
     };
-    onSave(appointmentData);
+    await onSave(appointmentData);
     onClose();
   };
 
