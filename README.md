@@ -100,4 +100,4 @@ O projeto está configurado para deploy na Vercel. Basta conectar o repositório
 
 ---
 
-**AUTOCAR VIDROS AUTOMOTIVOS** - 2026
+**VINICIUS CAMPEÃO FERNANDES** - 2026
