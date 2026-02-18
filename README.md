@@ -1,6 +1,6 @@
 # AUTOCAR - Sistema de Agendamento
 
-Sistema de gerenciamento de agendamentos para oficina de vidros automotivos.
+Sistema de gerenciamento de agendamentos para oficina automotiva.
 
 ## Instalação
 
