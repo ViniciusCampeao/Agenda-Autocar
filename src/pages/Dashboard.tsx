@@ -72,6 +72,7 @@ const Dashboard: React.FC = () => {
         totalAppointments: totalAppointments,
         insurancePercentage,
       });
+      setLoading(false);
     } catch {
       setLoading(false);
     }

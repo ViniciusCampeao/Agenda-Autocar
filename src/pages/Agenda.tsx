@@ -33,6 +33,7 @@ const Agenda: React.FC = () => {
       });
       
       setAppointments(loadedAppointments);
+      setLoading(false);
     } catch {
       setLoading(false);
     }
